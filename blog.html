@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ph blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+<section>
+    <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <label tabindex="0" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+            </label>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+              <li><a>Item 1</a></li>
+              <li>
+                <a>Parent</a>
+                <ul class="p-2">
+                  <li><a>Submenu 1</a></li>
+                  <li><a>Submenu 2</a></li>
+                </ul>
+              </li>
+              <li><a>Item 3</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost normal-case text-xl bg-gradient-to-r from-pink-200 to-indigo-400 ...">PH blog</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a>Question 1</a></li>
+            <li><a>Question 2</a></li>
+            <li><a>Question 3</a></li>
+          </ul>
+        </div>
+      </div>
+</section>
+    <main class="my-10">
+        <div>
+             <h1 class="text-xl font-semibold mx-5 my-2"> Discuss the scope of var, let, and const?</h1>
+             <div class="mx-5">
+                <li>
+                    var is the oldest keyword and has been around since the beginning of JavaScript. It has a few quirks that can lead to unexpected results, so it is generally recommended to use let or const instead.
+                </li> <br>
+                <li>let is a newer keyword that was introduced in ES6. It has the same basic       behavior as var, but it has a few important differences:
+                    let variables are block-scoped, which means that they can only be accessed within the block in which they are declared. This can help to prevent accidental scope pollution.</li><br>
+                    <li>const is another newer keyword that was introduced in ES6. It is similar to let, but it has one important difference: const variables cannot be reassigned once they are declared. This can help to make your code more robust and prevent accidental mistakes.</li>
+             </div>
+             <br>
+      <img class="p-5 w-2/5" src="download (1).png" alt="">
+    </div> <br> <br>
+    <div>
+        <h1 class="text-xl font-semibold mx-5"> Tell us the use cases of null and undefined? </h1> <br>
+        <div class="mx-5">
+            <li> To represent the absence of a value. Null is used to represent the intentional absence of a value, while undefined is used to represent the unintentional absence of a value. For example, if you have a variable that is supposed to store the user's age, but the user has not entered their age, you can set the variable to null to indicate that the value is not known. </li> <br>
+            <li>To check for the absence of a value. You can use the === operator to check if a variable is equal to null or undefined.</li> <br>
+            <li>To avoid errors. If you try to perform an operation on a variable that is equal to null or undefined, you will get an error.</li> <br>
+           <li> To pass a placeholder value. In some cases, you may need to pass a placeholder value to a function or method. For example, if you have a function that takes a number as an argument, but you don't know the number yet, you can pass null as a placeholder value. The function will then know that the number is not yet known, and it can handle the situation accordingly. </li><br>
+            <li>To represent an empty object. In JavaScript, an object is a collection of key-value pairs. If you want to create an object that has no keys or values, you can set the value of the object to null.</li> <br>
+            <li>To represent an unknown type. In JavaScript, there are many different types of data, such as numbers, strings, objects, and functions. If you don't know the type of a value, you can set it to null.</li>
+        </div>
+ <img class="w-2/5" src="T9M2J.png" alt="">
+</div>
+<div>
+    <h1 class=" text-xl font-semibold mx-5 my-2">What do you mean by REST API? 
+   </h1> <br>
+    <p class="mx-5">
+        REST API stands for Representational State Transfer Application Programming Interface. It is an architectural style for designing APIs (Application Programming Interfaces) that are based on the HTTP(Hypertext Transfer Protocol) protocol. REST APIs are used to expose data and functionality of a server to clients. <br> <br>
+        <li>Resource manipulation using HTTP methods: REST APIs use HTTP methods to manipulate resources. The most common HTTP methods are GET, POST, PUT, and DELETE.</li> <br>
+        <li>Self-descriptive messages: The response from a REST API must be self-descriptive. This means that the response must include all of the information that is needed by the client to understand the response.</li> <br>
+        <li>Uniform interface: All resources in a REST API must be accessed using the same interface. This means that the same HTTP methods and the same response formats must be used for all resources.</li>
+
+   </p> <br>
+<img class="w-2/5" src="rest_api_works.png" alt="">
+</div>
+        
+    </main>
+</body>
+</html>

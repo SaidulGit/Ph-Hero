@@ -11,10 +11,7 @@ data.data.forEach((items) => {
     `;
     tabContainer.appendChild(div);
 
-
-
 });
-
 
 
 };
@@ -38,10 +35,12 @@ const loadNews = async (categoryId) => {
     <figure><img src=${news.thumbnail} /></figure>
     <div class="card-body">
        <div class="flex flex-auto gap-2">
-          <div class="w-9 rounded-full" >
-          <img src=${news.authors[0].profile_picture
-          } />
-          </div>
+                <div class="avatar online">
+                    <div class="w-9 rounded-full" >
+                     <img src=${news.authors[0].profile_picture
+                      } />
+                   </div>
+                </div>
           <div>
           <h2 class="card-title">
           ${news.title}
@@ -52,7 +51,7 @@ const loadNews = async (categoryId) => {
        <div class="flex flex-auto gap-2">
          <p>${news.authors[0].profile_name}</p>
                    <div class="card-actions justify-start">
-                      <div class="badge badge-outline">Products</div>
+                      <div class="badge badge-outline">${news.authors[0].verified}</div>
                  </div>
         </div>
       <p>${news.others.views}</p>
